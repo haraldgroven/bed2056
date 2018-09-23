@@ -1,0 +1,77 @@
+---
+title: "BED2056_dataimport"
+author: "Harald groven"
+date: "9/23/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Import time series from Norwegian stock database 
+
+Fetch stock prices from Equinor (Ticker: EQNR) and Hydro (Ticker: NHY) from a list of public companies on Oslo Stock Exchange. [https://www.netfonds.no/quotes/kurs.php](netfonds.no) 
+
+URLs to time series in CSV-format 
+ 
+* Equinor https://www.netfonds.no/quotes/paperhistory.php?paper=EQNR.OSE&csv_format=csv 
+* Hydro https://www.netfonds.no/quotes/paperhistory.php?paper=NHY.OSE&csv_format=csv 
+
+## Chart 
+
+```{r, message=F, warning=F}
+options(encoding="UTF-8")
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(ggthemes) # Pretend its the cover story of my favourite news magazine, The Economist!
+
+
+stock_url <- c(
+  # Equinor
+  "https://www.netfonds.no/quotes/paperhistory.php?paper=EQNR.OSE&csv_format=csv",  
+  # Hydro
+  "https://www.netfonds.no/quotes/paperhistory.php?paper=NHY.OSE&csv_format=csv"
+  )
+
+# run read_csv on each url supplied by variable stock_url
+stock_data <- map_dfr(stock_url, read_csv)
+# convert data type of variable quote_date from numeric to yyyy-mm-dd
+stock_data$quote_date <- ymd(stock_data$quote_date)
+
+# View(stock_data)
+
+# Use January 4, 2010 as the starting point of the plot.
+stock_data_todisplay <- dplyr::filter(stock_data, quote_date >= "2010-01-04")
+
+# create line plot using ggplot2 
+gg_stock <- ggplot(
+              data = stock_data_todisplay, 
+              aes(x= quote_date, y=open, group=paper)
+              )+
+          geom_line()+
+          # style The Economist 
+          theme_economist()+
+          labs(y = "Stock price, open", x="")+
+         ggtitle("Equinor & Hydro")
+# print 
+gg_stock
+
+# mutate(stock_data_todisplay, nyvar = diff(stock_data$open)/stock_data$open[-length(stock_data$open)])
+# mutate(stock_data_todisplay, cumulative_returns =  diff(stock_data$open)/stock_data$open[-length(stock_data$open)]
+
+
+
+# Use January 4, 2010 as the starting point of the plot.
+# Calculate the returns (i.e., the log differential) on the price of each stock, and plot the cumulative returns.
+# Use January 4, 2010 as the starting point of the cumulative plot, i.e. it is equal to 100.
+
+View(stock_data_todisplay)
+```
+
+ 
+
+
+
+
