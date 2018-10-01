@@ -1,0 +1,121 @@
+---
+title: "Reading data from SSB API"
+author: "Harald groven"
+date: "10/01/2018"
+output: html_document
+---
+
+## Reading data from SSB API 
+
+What is the difference between hotel price of each Norwegian county and the national average?
+
+
+
+Downloaded the following data sources using the PxWebApiData package:  
+
+* 03616 Hotels and similar establishments. Utilisation and sales per room (C) 1985M01 - 2018M07
+* 03616 Hotels and similar establishments. Utilisation and sales per room (C) 1985M01 - 2018M07
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+ 
+```{r message=FALSE, warning=FALSE}
+library("tidyverse")
+library("PxWebApiData")
+
+# less awful HTML table design
+# devtools::install_github("haozhu233/kableExtra")
+library(knitr)
+library(kableExtra)
+
+
+
+# 03616 Hotell og liknande overnattingsbedrifter. Kapasitetsutnytting og pris per rom (F) 1985M01 - 2018M07
+# 03616 Hotels and similar establishments. Utilisation and sales per room (C) 1985M01 - 2018M07
+hotell_fylke_url <- "http://data.ssb.no/api/v0/dataset/95274.json?lang=no"
+
+# 03616 Hotell og liknande overnattingsbedrifter. Kapasitetsutnytting og pris per rom (F) 1985M01 - 2018M07 
+# 03616 Hotels and similar establishments. Utilisation and sales per room (C) 1985M01 - 2018M07
+hotell_kapasitet_url <- "http://data.ssb.no/api/v0/dataset/95276.json?lang=no"
+
+
+# run the beautiful JSON-STAT data cube format through the grinder, output plain old data frames 
+hotell_fylke_data <- as.data.frame(PxWebApiData::ApiData(hotell_fylke_url, getDataByGET = TRUE))
+hotell_kapasitet_data <- as.data.frame(PxWebApiData::ApiData(hotell_kapasitet_url, getDataByGET = TRUE))
+
+# View(hotell_fylke_data)
+# View(hotell_kapasitet_data)
+
+# 
+# 1. Merge the two dataframes
+# 
+
+# merge with base function rbind 
+hotell_data <- rbind(hotell_fylke_data, hotell_kapasitet_data)
+
+# add readable column names 
+hotell_names <- c(
+  "region_label", 
+  "time_ym", 
+  "variable_label", 
+  "value", 
+  "region_id", 
+  "dup1", 
+  "variable_id", 
+  "dup2"
+  )
+names(hotell_data) <- hotell_names
+# drop duplicate unnecessary columns leftover from PxWebApiData transformation 
+hotell_data <- select(hotell_data, -dup1, -dup2)
+
+# View(hotell_data)
+
+
+# 
+# 2. clean the data (i.e, remove zero prices) 
+# 
+
+
+hotell_price_data <- hotell_data %>% 
+  # remove variable_label, as it mess up spread 
+  select(-variable_label) %>%  
+  # compound unique key after aggregation = region+time
+  group_by(region_id, time_ym) %>%
+  # pivot rows to columns  
+  spread(key = variable_id, value, convert = TRUE) %>% 
+  # remove free hotel lunch 
+  dplyr::filter(PrisRom !=0)
+
+# View(hotell_price_data)
+
+# 
+# 3. calculate the difference between county average room price and the national average
+# 
+
+# add variable deviation_from_national_avg for difference between National average (region_id = 0) 
+
+hotell_price_data <- hotell_price_data %>%
+  group_by(time_ym) %>% 
+  mutate(deviation_from_national_avg = PrisRom-PrisRom[region_id==0]) %>% 
+  ungroup()
+
+# View(hotell_price_data)
+
+hotell_price_data %>% 
+  filter(time_ym == max(time_ym)) %>% 
+  select(-region_id, -Kaputnytt) %>% 
+  arrange(deviation_from_national_avg) %>% 
+  # styling with kable package 
+  # https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
+  kable() %>%
+  kable_styling()
+  
+
+
+# 
+# 4. What counties are above/below the national average? Is there any relationship between capacity and price?
+# 
+
+```
