@@ -1,0 +1,106 @@
+---
+title: "Solvency Data from Company Register"
+author: "Harald groven"
+date: "10/7/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Downloading bankruptcy data from The Brønnøysund Register Centre
+
+The Brønnøysund Register Centre offer data all bankruptcies. There's probably an API for this, but in this excersise I'm going to screen scrape from the HTML page.  
+
+Before scraping data from the web, first a word of caution from Randall Munroe:   
+
+![XKCD wisdom](https://imgs.xkcd.com/comics/data_pipeline_2x.png "XKCD wisdom")
+
+
+
+
+
+Select only companies and those who have been declared compulsory dissolution e.g., in Tromsø or Troms county. 
+How do we exclude people? Create some tables and pictures of the latest development.
+
+https://w2.brreg.no/kunngjoring/index.jsp 
+
+
+
+```{r skjermskrap, message=FALSE, warning=FALSE, paged.print=TRUE}
+
+# assignement 
+# https://docs.google.com/document/d/e/2PACX-1vSE1mou61Vz_0G5okfQjzk26rjNCvFkm9XXnk9TBJFf4heuzUQg52BBdBtuu8nHaxlylKIgZIHqicT9/pub
+
+
+# No API? Use Hadley's library for screen scraping
+library(tidyverse)
+# library for R screen scraping
+library(rvest)
+# handling date conversions 
+library(lubridate)
+# pipes
+library(magrittr)
+
+# path to URL of web service of bankrupsies 
+# any bankrupsy announcement from Jan 1 2010 to jan 1 2019
+brreg_url <- "https://w2.brreg.no/kunngjoring/kombisok.jsp?datoFra=01.01.2000&datoTil=31.12.2018&id_region=100&id_fylke=19&id_kommune=-+-+-&id_niva1=51&id_niva2=-+-+-&id_bransje1=0"
+
+# store entire html document as brreg_html
+brreg_html <- read_html(brreg_url)
+
+# Ugly Xpath suggested by Selectorgadget
+# https://selectorgadget.com/ 
+# brreg_expath <- "//table[(((count(preceding-sibling::*) + 1) = 6) and parent::*)]"
+
+# easier xpath, which actually work 
+brreg_expath <- "//table[4]"
+
+# store html table as brreg_table
+brreg_table <- html_nodes(brreg_html, xpath = brreg_expath) %>% 
+  html_nodes("table") %>%
+  html_table(fill=TRUE) %>%  
+  .[[1]] %>% 
+  # only every every second column contains data
+  # select(X2,X4,X6,X8) %>% 
+  select(c(2,4,6,8))  
+
+# variable names 
+brreg_names <- c("org_name", "org_nr", "kunngjoring_dato", "kunngjoring")
+names(brreg_table) <- brreg_names 
+
+# convert data type of variable quote_date from numeric to yyyy-mm-dd
+brreg_table$kunngjoring_dato <- parse_date_time(brreg_table$kunngjoring_dato, orders="dmY", tz = "Europe/Oslo")
+
+brreg_table_org <- brreg_table %>% 
+  dplyr::filter(
+    # only rows having valid dates 
+    !is.na(brreg_table$kunngjoring_dato > "2000-01-01"), 
+    # organisations have org_nr with 9 digits. 
+    # remove personal bankrupsies by filtering out 
+    (str_length(brreg_table$org_nr) >= 9)
+    ) %>% 
+  arrange(kunngjoring_dato) %>% 
+  dplyr::filter(kunngjoring %in% c("Tvangsoppløsning", "Tvangsavvikling"))
+
+
+# View(brreg_table_org)
+
+# write out table 
+# less awful HTML table design
+# devtools::install_github("haozhu233/kableExtra")
+library(knitr)
+library(kableExtra)
+
+brreg_table_org %>% 
+  kable() %>%
+  kable_styling()
+  
+ 
+
+# write.table(brreg_table_org, file = "brreg_table_org.tsv", sep = "\t", row.names = TRUE, col.names = NA)
+
+```
+
+
