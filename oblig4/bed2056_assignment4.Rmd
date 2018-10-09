@@ -1,7 +1,7 @@
 ---
 title: "Solvency Data from Company Register"
 author: "Harald groven"
-date: "10/7/2018"
+date: "10/9/2018"
 output: html_document
 ---
 
@@ -9,7 +9,21 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Downloading bankruptcy data from The Brønnøysund Register Centre
+```{r rlibraries, message=FALSE, warning=FALSE, paged.print=FALSE}
+# packages 
+library(tidyverse)
+# No API? Use Hadley's library for screen scraping
+library(rvest)
+# handling date conversions 
+library(lubridate)
+# pipes
+library(magrittr)
+library(knitr)
+# web friendly visualization library 
+library(plotly)
+```
+
+## Scraping bankruptcy data from The Brønnøysund Register Centre
 
 The Brønnøysund Register Centre offer data all bankruptcies. There's probably an API for this, but in this excersise I'm going to screen scrape from the HTML page.  
 
@@ -18,30 +32,18 @@ Before scraping data from the web, first a word of caution from Randall Munroe:
 ![XKCD wisdom](https://imgs.xkcd.com/comics/data_pipeline_2x.png "XKCD wisdom")
 
 
-
-
-
+# Task 
 Select only companies and those who have been declared compulsory dissolution e.g., in Tromsø or Troms county. 
 How do we exclude people? Create some tables and pictures of the latest development.
 
-https://w2.brreg.no/kunngjoring/index.jsp 
+[Search on brreg.no](https://w2.brreg.no/kunngjoring/index.jsp)
 
 
 
-```{r skjermskrap, message=FALSE, warning=FALSE, paged.print=TRUE}
+```{r screenscraper, message=FALSE, warning=FALSE, paged.print=TRUE}
 
 # assignement 
 # https://docs.google.com/document/d/e/2PACX-1vSE1mou61Vz_0G5okfQjzk26rjNCvFkm9XXnk9TBJFf4heuzUQg52BBdBtuu8nHaxlylKIgZIHqicT9/pub
-
-
-# No API? Use Hadley's library for screen scraping
-library(tidyverse)
-# library for R screen scraping
-library(rvest)
-# handling date conversions 
-library(lubridate)
-# pipes
-library(magrittr)
 
 # path to URL of web service of bankrupsies 
 # any bankrupsy announcement from Jan 1 2010 to jan 1 2019
@@ -56,6 +58,25 @@ brreg_html <- read_html(brreg_url)
 
 # easier xpath, which actually work 
 brreg_expath <- "//table[4]"
+```
+
+# Howto 
+[Download tables from brreg.no](https://w2.brreg.no/kunngjoring/kombisok.jsp?datoFra=01.01.2000&datoTil=31.12.2018&id_region=100&id_fylke=19&id_kommune=-+-+-&id_niva1=51&id_niva2=-+-+-&id_bransje1=0)
+ 
+Html-table for Company Announcements on brreg.no needs the following cleanup before storing as a data frame: 
+ 
+1. Remove emplty columns, used for styling, i.e. select column with index 2,4,6,8
+ 
+2. Rename columns with self explaining column names 
+ 
+3. Filter empty rows by requiering date field to be a valid date after 2000-01-01
+ 
+4. Keep only Company Register announcement of kind "Tvangsoppløsning", "Tvangsavvikling".
+
+5. Add self explaining column names insted the ones provided by rvest. 
+
+```{r rwrangling, message=FALSE, warning=FALSE, paged.print=TRUE}
+
 
 # store html table as brreg_table
 brreg_table <- html_nodes(brreg_html, xpath = brreg_expath) %>% 
@@ -79,7 +100,7 @@ brreg_table_org <- brreg_table %>%
     !is.na(brreg_table$kunngjoring_dato > "2000-01-01"), 
     # organisations have org_nr with 9 digits. 
     # remove personal bankrupsies by filtering out 
-    (str_length(brreg_table$org_nr) >= 9)
+    (str_length(brreg_table$org_nr) >= 8)
     ) %>% 
   arrange(kunngjoring_dato) %>% 
   dplyr::filter(kunngjoring %in% c("Tvangsoppløsning", "Tvangsavvikling"))
@@ -87,20 +108,49 @@ brreg_table_org <- brreg_table %>%
 
 # View(brreg_table_org)
 
-# write out table 
-# less awful HTML table design
-# devtools::install_github("haozhu233/kableExtra")
-library(knitr)
-library(kableExtra)
+```
 
-brreg_table_org %>% 
-  kable() %>%
-  kable_styling()
-  
- 
+# Plot events 
 
-# write.table(brreg_table_org, file = "brreg_table_org.tsv", sep = "\t", row.names = TRUE, col.names = NA)
+Plot event data. A cumulative line plot will do the job, if we are only going to look at trends or if the events are seasonal. 
+
+```{r}
+
+brreg_table_eventcount <- brreg_table_org %>% 
+  arrange(brreg_table_org$kunngjoring_dato) %>% 
+  group_by(brreg_table_org$kunngjoring_dato) %>%
+  summarise(counts = n()) %>%
+  mutate(running_total = cumsum(counts))
+
+ggplot_eventcount <- ggplot(brreg_table_eventcount, 
+       aes(y=running_total, x=brreg_table_eventcount$`brreg_table_org$kunngjoring_dato`))+
+  geom_line() + 
+  labs(title='Number of bankruptcies by date, cumulative count', y='Cumulative count', x='Date') +
+  theme_bw() + 
+  theme(legend.position='bottom')
+
+# Show in web friendly library Plot.ly
+ggplotly(ggplot_eventcount)
+# View(brreg_table_eventcount)
 
 ```
 
+Seems like bankruptcies are declared around June each year. The remaining seasons have few bankruptcies. 
 
+
+# Data table 
+```{r}
+
+# write out table 
+# less awful HTML table design
+# devtools::install_github("haozhu233/kableExtra")
+# docs https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
+library(kableExtra)
+
+# write out
+brreg_table_org %>% 
+  # style   
+  kable() %>%
+  kable_styling()
+
+```
