@@ -1,0 +1,124 @@
+---
+title: "oblig6"
+author: "Harald Groven"
+date: "10/29/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# load packages
+library(tidyverse)
+# string functions 
+library(stringr)
+# graphics 
+library(ggplot2)
+# table styles 
+library(kableExtra)
+```
+
+
+## Create tribble `DS` with 6 variables 
+
+```{r echo=TRUE}
+DS = tribble(
+ ~fk_account_code, ~Ansvar, ~fk_function_code, ~fk_project_code, ~amount,
+ 101030, 40220, "Det", 3432, 1493.00,
+ 101030, 40220, "Met", 3586, 2827.00,
+ 101030, 40320, "Det", 3456, 49440.00,
+ 101030, 40330, "Sal", NA, 870716.00,
+ 101030, 40350, "Met", NA, 559928.00,
+ 101030, 40360, "Sal", NA, 125534.00,
+ 101030, 40280, "Pol", NA, 251611.00
+ )
+# View(DS)
+```
+
+## Drop a variable
+
+1) Remove the `fk_project_code` variable from `DS`.
+
+In tidyr this may be achieved by selecting the data frame minus the unwanted columnt. This has the same effect as dropping the variable. 
+
+```{r echo=TRUE}
+DS <- select(DS, -fk_project_code)
+```
+
+2) Sum the `amount` by the 3 first digits of `Ansvar`; 402, 403, etc.
+
+Created new variable `ansvar3` containing the 3 first digits of Ansvar by using the regular expression `\\d{3,3}`
+This new variable could then be used for grouping and summarising. 
+
+```{r echo=TRUE}
+
+DS %>% 
+  mutate(ansvar3 = str_extract(DS$Ansvar, "\\d{3,3}")) %>% 
+  select(ansvar3, amount) %>% 
+  group_by(ansvar3) %>% 
+  summarise(sum = sum(amount)) %>% 
+  # style   
+  kable() %>%
+  kable_styling()
+```
+
+## Recode values 
+
+3) Make new "labels" for `fk_function_code`, where:
+        `Det` and `Sal` is `supplies`,
+        `Met` is `inventories` and
+        `Pol` is `other expenses`
+        
+Created a new variable `fk_function_label` as a copy of `fk_function_code`. Then used the `recode` function to replace codes with readable labels. 
+
+```{r echo=TRUE}
+
+DS <- DS %>%
+  mutate(fk_function_label = recode(DS$fk_function_code, 
+       "Det" = "supplies", 
+       "Sal" = "supplies",
+       "Met" = "inventories", 
+       "Pol" = "other expenses"
+       ))
+# View(DS)
+```
+
+
+
+## Sum and group by 
+
+Calculate the share of sales per product per year. The sum over the 3 shares per year is 100.
+
+```{r echo=TRUE}
+# first read some toy data 
+df <- data.frame(Product=gl(3,10,labels=c("A", "B", "C")),
+                Year=factor(rep(2002:2011, 3)),
+                Sales=1:30)
+# View(df)
+
+df <- df %>% 
+  group_by(Year) %>% 
+  mutate(sum_year = sum(Sales)) %>% 
+  ungroup() %>%
+  mutate(pst_sum_year = (100/sum_year)*Sales) 
+
+df %>% 
+  # style   
+  kable() %>%
+  kable_styling()
+
+```
+
+## Stacked bar chart
+
+Make a plot of the sales and shares per year per company.
+
+Easiest possible stacked bar chart may be created with `ggplot2`'s `geom_bar`. Variable `Product` used for stacking within year. 
+
+```{r echo=TRUE}
+
+ggplot(df) + 
+  geom_bar(aes(x=Year, y=Sales, fill = Product), stat="identity")
+
+```
+
