@@ -1,0 +1,140 @@
+---
+title: "US Birth Statistics "
+author: "Harald groven"
+date: "10/14/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[Description of assignement](https://docs.google.com/document/d/e/2PACX-1vQq5ozMyz6qoCpNOJNUOPQbyDQyNtVWcPEvJppYxp30YlOkHhUslTplCac8OJH80AN2PZnDtiUWl62W/pub)
+
+# Download data frin cdc.gov
+
+Since this is slow, I have commented out bash commands after runnding these first time. 
+
+```{bash curl_dl, echo=TRUE}
+# Download zip file to working directory 
+
+# curl -O ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2017us.zip
+# unzip Nat2017us.zip
+```
+
+```{r libraries, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readr)
+
+# less awful HTML table design
+# devtools::install_github("haozhu233/kableExtra")
+library(knitr)
+library(kableExtra)
+```
+
+
+
+Census microdata for all 2017 births in the US is concained. Each row reprsents one birth. 
+Fixed file format, i.e. relative position of each variable are always the same for each line. 
+
+In a sane world, the data would be provided in a format where the codebook is in another format than PDF. The most efficient way of solving this exercise would have been to download the data as a STATA, SAS or SPSS files from [National Bureau of Economic Research](http://www.nber.org/data/vital-statistics-natality-data.html), and convert the data to R. 
+
+The fixed format datafile has the name Nat2017PublicUS.c20180516.r20180808.txt when unzipped. The R function read_fwf is able to parse this file format. 
+
+Variable name  | Position in fwf file 
+------------- | -------------
+dob_mm  | From position 13 to position 14 
+sex  | From position 475 to position 475 
+dbwt  | From position 504 to position 507 
+
+ 
+```{r}
+
+census_file <- "Nat2017PublicUS.c20180516.r20180808.txt"
+
+# 4. Named arguments with start and end positions
+us_census <- read_fwf(census_file, 
+                      guess_max = 1000,
+                      fwf_cols(
+                        dob_mm = c(13, 14), 
+                        sex = c(475, 475), 
+                        dbwt = c(504, 507)
+                        ), 
+                      col_types = "ici"
+                      )
+# View(us_census)
+
+```
+
+
+# What is the proportion of boys to girls?
+
+```{r bsex}
+# group by variable sex. Store total number of observations in variable n_births. 
+us_census %>% 
+  group_by(sex) %>%  
+  summarise (n_births = n()) %>%  
+  mutate(freq = 100*n_births / sum(n_births)) %>% 
+  kable() %>%
+  kable_styling()
+```
+
+# What is the average birth weight in grams?
+
+Calculating mean value on variable dbwt gives the following result: 
+
+```{r bweight}
+mean(us_census$dbwt)%>% 
+  kable() %>%
+  kable_styling()
+```
+
+# Make a density plot on the birth weight between boys and girls. Is it different?
+
+First filter out unknown values, which is coded as 9999. 
+A density plot (of type geom_density) yield the following result. 
+
+```{r}
+# thanks to http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization for tips 
+
+us_census %>% 
+  filter(dbwt!="9999") %>%
+  ggplot(., aes(x=dbwt, group=sex, fill=sex))+
+    geom_density(alpha=0.15)+
+    scale_fill_manual(values=c("#ff0000", "#0000ff"))+
+    xlab("Birth weight")
+
+
+```
+
+
+# Does the average birth weight vary by month?
+
+Birth weight seems pretty consistent for all months between 3250 and 3270 gram. However, birth weight is sligtly lower in December and January. 
+
+```{r warning=FALSE}
+us_census %>% 
+  filter(dbwt!="9999") %>%
+  select(dob_mm, dbwt) %>% 
+  group_by(dob_mm) %>% 
+  summarise(mean_birth_weight = mean(dbwt))%>% 
+  kable() %>%
+  kable_styling()
+```
+
+
+```{r warning=FALSE}
+us_census %>% 
+  filter(dbwt!="9999") %>%
+  select(dob_mm, dbwt) %>% 
+  group_by(dob_mm) %>% 
+  summarise(mean_birth_weight = mean(dbwt))%>% 
+  ggplot(., aes(x=dob_mm, y=mean_birth_weight))+
+    geom_bar(stat = "summary")+
+    coord_cartesian(ylim=c(3250,3270))+
+    # show months as inteers, not decimal numbers 
+    scale_x_continuous(breaks=c(1:12))+
+    ylab("Mean birth weight")+
+    xlab("Month number")+
+    ggtitle("Mean birth weight by month")
+```
