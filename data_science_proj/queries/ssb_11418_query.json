@@ -1,0 +1,85 @@
+{
+  "query": [
+    {
+      "code": "MaaleMetode",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "02",
+          "01",
+          "051",
+          "061",
+          "10"
+        ]
+      }
+    },
+    {
+      "code": "Yrke",
+      "selection": {
+        "filter": "all",
+        "values": [
+          "*"
+        ]
+      }
+    },
+    {
+      "code": "Sektor",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "ALLE",
+          "A+B+D+E",
+          "6500",
+          "6100"
+        ]
+      }
+    },
+    {
+      "code": "Kjonn",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "0",
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "code": "AvtaltVanlig",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "0",
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "code": "ContentsCode",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "Manedslonn",
+          "AvtaltManedslonn",
+          "Uregtil",
+          "Bonus",
+          "Overtid"
+        ]
+      }
+    },
+    {
+      "code": "Tid",
+      "selection": {
+        "filter": "top",
+        "values": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "csv"
+  }
+}

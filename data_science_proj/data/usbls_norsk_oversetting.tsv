@@ -1,0 +1,196 @@
+onettype	element_id	element_name_nb
+Interests	1.B.1.c	Kunstnerisk
+Interests	1.B.1.f	Tradisjonelt
+Interests	1.B.1.e	Foretaksvirksomhet
+Interests	1.B.1.b	Undersøkende
+Interests	1.B.1.a	Realistisk
+Interests	1.B.1.h	Second Interest High-Point
+Interests	1.B.1.g	First Interest High-Point
+Interests	1.B.1.d	Sosialt
+Interests	1.B.1.i	Third Interest High-Point
+abilities	1.A.1.a.1	Muntlig forståelse
+abilities	1.A.1.a.2	Skriftlig forståelse
+abilities	1.A.1.a.3	Muntlig uttrykkelse
+abilities	1.A.1.a.4	Skriftlig uttrykkelse
+abilities	1.A.1.b.1	Idemyldringsevne
+abilities	1.A.1.b.2	Originalitet
+abilities	1.A.1.b.3	Evne til å se problemer
+abilities	1.A.1.b.4	Evne til å resonnere deduktivt
+abilities	1.A.1.b.5	Evnet til å resonnere induktivt
+abilities	1.A.1.b.6	Organisere informasjon
+abilities	1.A.1.b.7	Kategorifleksibilitet
+abilities	1.A.1.c.1	Evne til å resonnere matematisk 
+abilities	1.A.1.c.2	Tallforståelse
+abilities	1.A.1.d.1	Hukommelse
+abilities	1.A.1.e.1	Informasjonsorganisering
+abilities	1.A.1.e.2	Mønstergjenkjenning
+abilities	1.A.1.e.3	Oppfatningsevne
+abilities	1.A.1.f.1	Spatial orientering
+abilities	1.A.1.f.2	Visualisering
+abilities	1.A.1.g.1	Selektiv oppmerksomhet
+abilities	1.A.1.g.2	Tidsfordeling
+abilities	1.A.2.a.1	Stødighet i arm/hånd
+abilities	1.A.2.a.2	Armbevegelse
+abilities	1.A.2.a.3	Fingernemhet
+abilities	1.A.2.b.1	Styringspresisjon
+abilities	1.A.2.b.2	Kroppskoordinasjon
+abilities	1.A.2.b.3	Responsorientering
+abilities	1.A.2.b.4	Tids-/hastighetsberegning
+abilities	1.A.2.c.1	Reaksjonstid
+abilities	1.A.2.c.2	Hastighet i håndledd/finger
+abilities	1.A.2.c.3	Kroppsbevegelseshastighet
+abilities	1.A.3.a.1	Statisk styrke
+abilities	1.A.3.a.2	Eksplosiv styrke
+abilities	1.A.3.a.3	Dynamisk styrke
+abilities	1.A.3.a.4	Kjernestyrke
+abilities	1.A.3.b.1	Fysisk utholdenhet
+abilities	1.A.3.c.1	Utstrekningsfleksibilitet
+abilities	1.A.3.c.2	Dynamisk fleksibilitet
+abilities	1.A.3.c.3	Kroppskoordinering
+abilities	1.A.3.c.4	Kroppsbalanse
+abilities	1.A.4.a.1	Nærsyn
+abilities	1.A.4.a.2	Langsyn
+abilities	1.A.4.a.3	Fargeatskillelse
+abilities	1.A.4.a.4	Nattsyn
+abilities	1.A.4.a.5	Sidesyn
+abilities	1.A.4.a.6	Dybdesyn
+abilities	1.A.4.a.7	Følsomhet for gjenskinn
+abilities	1.A.4.b.1	Hørselfølsomhet
+abilities	1.A.4.b.2	Lydmessig oppmerksomhet
+abilities	1.A.4.b.3	Lydlokalisering
+abilities	1.A.4.b.4	Talegjenkjenning
+abilities	1.A.4.b.5	Evne til å snakke klart
+work_values	1.B.2.a	Oppnåelse
+work_values	1.B.2.b	Arbeidsforhold
+work_values	1.B.2.c	Anerkjennelse
+work_values	1.B.2.d	Relasjoner
+work_values	1.B.2.e	Støtte
+work_values	1.B.2.f	Uavhengighet
+work_values	1.B.2.g	First Work Value High-Point
+work_values	1.B.2.h	Second Work Value High-Point
+work_values	1.B.2.i	Third Work Value High-Point
+work_styles	1.C.1.a	Oppnåelse/Innsats
+work_styles	1.C.1.b	Utholdenhet
+work_styles	1.C.1.c	Initiavtiv
+work_styles	1.C.2.b	Ledelse
+work_styles	1.C.3.a	Samarbeid
+work_styles	1.C.3.b	Omtanke for andre
+work_styles	1.C.3.c	Sosial legning
+work_styles	1.C.4.a	Selvkontroll
+work_styles	1.C.4.b	Stressmestring
+work_styles	1.C.4.c	Tilpasningsdyktighet/Fleksibilitet
+work_styles	1.C.5.a	Ansvarlighet
+work_styles	1.C.5.b	Øye for detaljer
+work_styles	1.C.5.c	Integritet
+work_styles	1.C.6	Uavhengighet
+work_styles	1.C.7.a	Innovasjon
+work_styles	1.C.7.b	Analytisk tenking
+skills	2.A.1.a	Leseforståelse
+skills	2.A.1.b	Aktiv lytting
+skills	2.A.1.c	Skriving
+skills	2.A.1.d	Snakking
+skills	2.A.1.e	Matematikk
+skills	2.A.1.f	Naturvitenskap
+skills	2.A.2.a	Kritisk tenkning
+skills	2.A.2.b	Aktiv læring
+skills	2.A.2.c	Læringsstrategier
+skills	2.A.2.d	Overvåking
+skills	2.B.1.a	Sosiale antenner
+skills	2.B.1.b	Koordinasjon
+skills	2.B.1.c	Overtalelsesevne
+skills	2.B.1.d	Forhandlingsevne
+skills	2.B.1.e	Instruksjon
+skills	2.B.1.f	Serviceinnstilling
+skills	2.B.2.i	Kompleks problemløsning
+skills	2.B.3.a	Operasjonsanalyse
+skills	2.B.3.b	Teknologidesign
+skills	2.B.3.c	Utstyrsvalg
+skills	2.B.3.d	Installasjon
+skills	2.B.3.e	Programmering
+skills	2.B.3.g	Driftsovervåking
+skills	2.B.3.h	Drift og styring
+skills	2.B.3.j	Utstyrsvedlikehold
+skills	2.B.3.k	Feilsøking
+skills	2.B.3.l	Reparasjon
+skills	2.B.3.m	Kvalitetskontrollanalyse
+skills	2.B.4.e	Vurderinger og beslutningstaking
+skills	2.B.4.g	Systemanalyse
+skills	2.B.4.h	Systemevaluering
+skills	2.B.5.a	Tidsstyring
+skills	2.B.5.b	Økonomistyring
+skills	2.B.5.c	Materialstyring
+skills	2.B.5.d	Personaladministrasjon
+knowledge	2.C.1.a	Administrasjon og ledelse
+knowledge	2.C.1.b	Kontor
+knowledge	2.C.1.c	Økonomi og regnskap
+knowledge	2.C.1.d	Salg og markedsføring
+knowledge	2.C.1.e	Kunde- og personalservice
+knowledge	2.C.1.f	Personalarbeid
+knowledge	2.C.10	Transport
+knowledge	2.C.2.a	Poduksjon og prosessering
+knowledge	2.C.2.b	Matproduksjon
+knowledge	2.C.3.a	Datamaskiner og elektronikk
+knowledge	2.C.3.b	Ingeniørfag og teknologi
+knowledge	2.C.3.c	Design
+knowledge	2.C.3.d	Bygg og anlegg
+knowledge	2.C.3.e	Mekanisk
+knowledge	2.C.4.a	Matematikk
+knowledge	2.C.4.b	Fysikk
+knowledge	2.C.4.c	Kjemi
+knowledge	2.C.4.d	Biologi
+knowledge	2.C.4.e	Psykologi
+knowledge	2.C.4.f	Sosiologi og sosialantropologi
+knowledge	2.C.4.g	Geografi
+knowledge	2.C.5.a	Medisin og odontologi
+knowledge	2.C.5.b	Terapi og rådgiving
+knowledge	2.C.6	Utdanning og opplæring
+knowledge	2.C.7.a	(Norsk språk)
+knowledge	2.C.7.b	Fremmedspråk
+knowledge	2.C.7.c	Kunst
+knowledge	2.C.7.d	Historie og arkeologi
+knowledge	2.C.7.e	Filosofi og teologi
+knowledge	2.C.8.a	Samfunnssikkerhet
+knowledge	2.C.8.b	Jus og offentlige myndigheter
+knowledge	2.C.9.a	Telekommunikasjon
+knowledge	2.C.9.b	Medier og kommunikasjon
+work_activities	4.A.1.a.1	Informasjonssøk
+work_activities	4.A.1.a.2	Overvåking av prosesser, materialer eller omgivelser
+work_activities	4.A.1.b.1	Identifisering av objekter, handlinger og hendelser
+work_activities	4.A.1.b.2	Inspeksjon av utstyr, strukturer eller materialer
+work_activities	4.A.1.b.3	Estimering av kvantitative egenskaper ved produkter, hendelser eller informasjon
+work_activities	4.A.2.a.1	Vurdere kvalitet på gjenstander, tjenester eller mennesker
+work_activities	4.A.2.a.2	Informasjonsbehandling
+work_activities	4.A.2.a.3	Evaluere informasjon for å vurdere samsvar med standarder
+work_activities	4.A.2.a.4	Data- eller informasjonsanalyse
+work_activities	4.A.2.b.1	Problemløsing og beslutningstaking
+work_activities	4.A.2.b.2	Kreativ tenkning
+work_activities	4.A.2.b.3	Oppdatere og bruke relevant kunnskap
+work_activities	4.A.2.b.4	Utvikling av mål og strategier
+work_activities	4.A.2.b.5	Planlegging av arbeid og aktiviteter
+work_activities	4.A.2.b.6	Organisere, planlegge og prioritere
+work_activities	4.A.3.a.1	Utføre generell fysisk aktivitet
+work_activities	4.A.3.a.2	Håndtere og flytte gjenstander
+work_activities	4.A.3.a.3	Styre maskiner og prosesser
+work_activities	4.A.3.a.4	Operere kjøretøy, mekaniserte innretninger eller utstyr
+work_activities	4.A.3.b.1	Datamaskinbruk
+work_activities	4.A.3.b.2	Utarbeide, skissere og spesifisere tekniske enheter, deler og utstyr
+work_activities	4.A.3.b.4	Reparere og vedlikeholde mekanisk utstyr
+work_activities	4.A.3.b.5	Reparere og vedlikeholde elektronisk utstyr
+work_activities	4.A.3.b.6	Dokumentere og registrere informasjon
+work_activities	4.A.4.a.1	Tolke og forstå informasjon for andre
+work_activities	4.A.4.a.2	Kommunisere med ledelse, kolleger og underordnede
+work_activities	4.A.4.a.3	Kommunisere med personer utenfor organisasjonen
+work_activities	4.A.4.a.4	Etablere og opprettholde mellommenneskelige forhold
+work_activities	4.A.4.a.5	Hjelpe og vise omsorg for andre
+work_activities	4.A.4.a.6	Selge eller påvirke andre
+work_activities	4.A.4.a.7	Løse konflikter og forhandle med andre
+work_activities	4.A.4.a.8	Opptre for eller arbeide direkte med publikum
+work_activities	4.A.4.b.1	Koordinere andres arbeid
+work_activities	4.A.4.b.2	Teambygging
+work_activities	4.A.4.b.3	Opplæring og undervisning
+work_activities	4.A.4.b.4	Veilede, motivere og lede ansatte
+work_activities	4.A.4.b.5	Veilede og utvikle andre
+work_activities	4.A.4.b.6	Rådgivning
+work_activities	4.A.4.c.1	Administrasjon
+work_activities	4.A.4.c.2	Rekruttering
+work_activities	4.A.4.c.3	Overvåking og styring av ressurser

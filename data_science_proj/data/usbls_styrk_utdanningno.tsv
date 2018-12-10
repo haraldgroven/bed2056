@@ -1,0 +1,659 @@
+soc_code	styrk08_code	styrk08_kategorinavn	utdanningno_yrke
+35-2014.00	3434	Sjefskokk	Kokk
+35-2014.00	1412	Restaurantsjef	Kokk
+35-2014.00	5246	Gatekjøkken- eller kafémedarbeider	Kokk
+35-2014.00	5120	Kokk	Kokk
+23-1011.00	2611	Jurist eller advokat	Advokat
+43-6012.00	3342	Advokatsekretær	Advokatsekretær
+41-3031.03	3311	Finansmegler	Aksjemegler
+25-2059.01	5321	Helsefagarbeider	Aktivitør
+29-1125.00	5321	Helsefagarbeider	Aktivitør
+15-2011.00	2120	Matematiker, statistiker	Aktuar
+25-2021.00	2341	Grunnskolelærer	Grunnskolelærer
+25-2022.00	2341	Grunnskolelærer	Grunnskolelærer
+29-2041.00	3258	Ambulansepersonell	Ambulansearbeider
+53-3011.00	3258	Ambulansepersonell	Ambulansearbeider
+37-3011.00	6113	Gartner	Anleggsgartner
+37-3011.00	9214	Hjelpearbeider i gartneri	Anleggsgartner
+53-7032.00	8342	Anleggsmaskinfører	Anleggsmaskinfører
+19-3091.02	2633	Arkeologer, historikere eller kunsthistorikere	Arkeolog
+17-1011.00	2161	Arkitekt	Arkitekt
+17-1011.00	1213	Planleggingssjef	Arkitekt
+25-4011.00	2621	Arkivar eller kurator	Arkivar
+25-4011.00	4415	Arkivassistent	Arkivar
+25-4011.00	2622	Bibliotekar	Arkivar
+43-4071.00	2621	Arkivar eller kurator	Arkivar
+43-4071.00	4415	Arkivassistent	Arkivar
+43-4071.00	2622	Bibliotekar	Arkivar
+27-1011.00	1222	PR- eller informasjonssjef	Art director
+39-9021.00	5169	Personlig assistent	Personlig assistent
+39-9021.00	5322	Hjemmehjelper	Personlig assistent
+19-2011.00	2111	Fysiker eller astronom	Astronom
+29-1181.00	2266	Audiograf eller logoped	Audiograf
+29-2092.00	2266	Audiograf eller logoped	Audiograf
+51-4012.00	7412	Automatiker	Automatiker
+49-2091.00	7412	Automatiker	Avioniker
+49-2091.00	7232	Flymekaniker	Avioniker
+33-9092.00	5419	Sikkerhetsarbeider	Badevakt
+51-3011.00	7512	Baker, konditor	Baker
+25-2012.00	5311	Barnehage- eller skolefritidsassistent	Barne- og ungdomsarbeider
+39-9011.00	5311	Barnehage- eller skolefritidsassistent	Barnehageassistent
+29-1065.00	2212	Legespesialist	Barnelege
+21-1021.00	1341	Barnehagestyrer	Barnevernspedagog
+21-1021.00	3412	Miljøarbeider i sosiale fagfelt	Barnevernspedagog
+21-1021.00	2635	Barnevern- eller familievernmedarbeider	Barnevernspedagog
+35-3011.00	5132	Bartender	Bartender
+25-4021.00	2622	Bibliotekar	Bibliotekar
+25-4021.00	4411	Bibliotekassistent	Bibliotekar
+51-9122.00	7132	Overflatebehandler eller lakkerer	Billakkerer
+49-3023.01	7231	Bilmekaniker	Bilmekaniker (lette kjøretøy)
+31-9097.00	3212	Bioingeniør	Bioingeniør
+17-2199.01	2131	Biolog eller fiskeriforsker	Biokjemiker
+17-2199.01	2113	Kjemiker	Biokjemiker
+19-1021.00	2131	Biolog eller fiskeriforsker	Biokjemiker
+19-1021.00	2113	Kjemiker	Biokjemiker
+19-1020.01	2131	Biolog eller fiskeriforsker	Biolog
+19-1020.01	3141	Biotekniker (ikke-medisinske laboratorier)	Biolog
+17-2031.00	2131	Biolog eller fiskeriforsker	Bioteknolog
+17-2031.00	2113	Kjemiker	Bioteknolog
+19-4021.00	2131	Biolog eller fiskeriforsker	Bioteknolog
+19-4021.00	2113	Kjemiker	Bioteknolog
+27-1023.00	7549	Håndverker	Blomsterdekoratør
+51-5113.00	7323	Innbinder	Bokbinder
+45-2091.00	6122	Egg- eller fjærfeprodusent	Bonde
+45-2091.00	6113	Gartner	Bonde
+45-2091.00	9214	Hjelpearbeider i gartneri	Bonde
+45-2091.00	9212	Hjelpearbeider i husdyrproduksjon	Bonde
+45-2091.00	6121	Melke- eller husdyrprodusent	Bonde
+45-2091.00	6130	Plante- eller husdyrprodusent (kombinasjonsbruk)	Bonde
+45-2092.02	6122	Egg- eller fjærfeprodusent	Bonde
+45-2092.02	6113	Gartner	Bonde
+45-2092.02	9214	Hjelpearbeider i gartneri	Bonde
+45-2092.02	9212	Hjelpearbeider i husdyrproduksjon	Bonde
+45-2092.02	6121	Melke- eller husdyrprodusent	Bonde
+45-2092.02	6130	Plante- eller husdyrprodusent (kombinasjonsbruk)	Bonde
+45-2093.00	6122	Egg- eller fjærfeprodusent	Bonde
+45-2093.00	6113	Gartner	Bonde
+45-2093.00	9214	Hjelpearbeider i gartneri	Bonde
+45-2093.00	9212	Hjelpearbeider i husdyrproduksjon	Bonde
+45-2093.00	6121	Melke- eller husdyrprodusent	Bonde
+45-2093.00	6130	Plante- eller husdyrprodusent (kombinasjonsbruk)	Bonde
+33-2011.01	5411	Brannkonstabel	Brannkonstabel
+53-3021.00	8331	Bussjåfør eller trikkefører	Bussjåfør
+41-2011.00	5222	Butikkavdelingssjef	Butikkmedarbeider
+41-2011.00	5223	Butikkmedarbeider	Butikkmedarbeider
+41-2011.00	5242	Demonstrasjonsselger	Butikkmedarbeider
+41-2011.00	5245	Servicemedarbeider (bensinstasjon)	Butikkmedarbeider
+41-2011.00	5211	Torghandler	Butikkmedarbeider
+41-2011.00	1420	Butikksjef	Butikkmedarbeider
+41-2011.00	9334	Varepåfyller	Butikkmedarbeider
+27-2031.00	2653	Danser eller koreograf	Danser
+15-1131.00	2512	Programvareutvikler	Dataingeniør
+15-1131.00	2511	Systemanalytiker/-arkitekt	Dataingeniør
+15-1131.00	2152	Sivilingeniør (elektronikk)	Dataingeniør
+15-1131.00	3512	Brukerstøtte, IKT	Dataingeniør
+15-1131.00	3511	Driftstekniker, IKT	Dataingeniør
+15-1131.00	3513	Nettverks- eller systemtekniker, IKT	Dataingeniør
+15-1131.00	1330	IKT-sjef	Dataingeniør
+17-2061.00	2512	Programvareutvikler	Dataingeniør
+17-2061.00	2511	Systemanalytiker/-arkitekt	Dataingeniør
+17-2061.00	2152	Sivilingeniør (elektronikk)	Dataingeniør
+17-2061.00	3512	Brukerstøtte, IKT	Dataingeniør
+17-2061.00	3511	Driftstekniker, IKT	Dataingeniør
+17-2061.00	3513	Nettverks- eller systemtekniker, IKT	Dataingeniør
+17-2061.00	1330	IKT-sjef	Dataingeniør
+27-2041.01	2652	Musiker	Dirigent
+23-1023.00	2612	Dommer	Dommer
+49-9092.00	7541	Yrkesdykker	Dykker
+29-2056.00	5164	Dyrepasser eller - trener	Dyrepleier
+29-2056.00	3240	Dyrepleier	Dyrepleier
+41-9021.00	3334	Eiendomsmegler eller - forvalter	Eiendomsmegler
+41-9022.00	3334	Eiendomsmegler eller - forvalter	Eiendomsmegler
+47-2111.00	7412	Automatiker	Elektriker
+47-2111.00	7411	Elektriker	Elektriker
+17-2071.00	2152	Sivilingeniør (elektronikk)	Elektroingeniør
+17-2071.00	3114	Elektronikkingeniør	Elektroingeniør
+17-2071.00	3113	Elkraftingeniør	Elektroingeniør
+17-2072.00	2152	Sivilingeniør (elektronikk)	Elektroingeniør
+17-2072.00	3114	Elektronikkingeniør	Elektroingeniør
+17-2072.00	3113	Elkraftingeniør	Elektroingeniør
+17-3023.01	2152	Sivilingeniør (elektronikk)	Elektroingeniør
+17-3023.01	3114	Elektronikkingeniør	Elektroingeniør
+17-3023.01	3113	Elkraftingeniør	Elektroingeniør
+17-3023.03	2152	Sivilingeniør (elektronikk)	Elektroingeniør
+17-3023.03	3114	Elektronikkingeniør	Elektroingeniør
+17-3023.03	3113	Elkraftingeniør	Elektroingeniør
+49-9051.00	7413	Energimontører	Energimontør
+29-1122.00	2267	Ergoterapeut	Ergoterapeut
+29-1031.00	2265	Ernæringsfysiolog	Klinisk ernæringsfysiolog
+33-3012.00	5413	Fengselsbetjent	Fengselsbetjent
+25-1126.00	2633	Arkeologer, historikere eller kunsthistorikere	Filosof
+11-9013.03	6221	Havbruksarbeider	Fiskeoppdretter
+45-3011.00	6222	Fisker	Fisker
+53-2021.00	3154	Flygeleder	Flygeleder
+49-3011.00	7232	Flymekaniker	Flymotormekaniker
+27-3043.05	2641	Forfatter eller forlagsmedarbeider	Forfatter
+13-2053.00	4312	Forsikrings- eller finansmedarbeider	Forsikringsrådgiver
+13-2053.00	3321	Forsikringsagenter	Forsikringsrådgiver
+13-2053.00	3315	Takstmann	Forsikringsrådgiver
+41-3021.00	4312	Forsikrings- eller finansmedarbeider	Forsikringsrådgiver
+41-3021.00	3321	Forsikringsagenter	Forsikringsrådgiver
+41-3021.00	3315	Takstmann	Forsikringsrådgiver
+27-4021.00	3431	Fotograf eller filmfotograf	Fotograf
+29-1081.00	5142	Kosmetolog	Fotterapeut
+39-5012.00	5141	Frisør	Frisør
+19-2012.00	2111	Fysiker eller astronom	Fysiker
+19-2012.00	2114	Geolog eller geofysiker	Fysiker
+29-1123.00	2264	Fysioterapeut	Fysioterapeut
+39-2011.00	5164	Dyrepasser eller - trener	Førerhundtrener
+11-9031.00	2342	Barnehagelærer	Barnehagelærer
+25-2011.00	2342	Barnehagelærer	Barnehagelærer
+11-9013.01	6113	Gartner	Gartner
+11-9013.01	9214	Hjelpearbeider i gartneri	Gartner
+45-2092.01	6113	Gartner	Gartner
+45-2092.01	9214	Hjelpearbeider i gartneri	Gartner
+19-2042.00	2114	Geolog eller geofysiker	Geofysiker
+19-3092.00	2114	Geolog eller geofysiker	Geograf
+19-3092.00	2632	Rådgiver/forsker, samfunnsvitenskap	Geograf
+17-2151.00	2114	Geolog eller geofysiker	Geolog
+27-1024.00	2166	Grafisk- eller multimediadesigner	Grafisk designer
+39-7011.00	5113	Reiseleder eller guide	Guide
+51-9071.01	7313	Gull- eller sølvsmed, gravør	Gullsmed
+51-9071.07	7313	Gull- eller sølvsmed, gravør	Gullsmed
+29-1064.00	2212	Legespesialist	Gynekolog
+31-9094.00	3256	Helsesekretær	Helsesekretær
+43-6013.00	3256	Helsesekretær	Helsesekretær
+21-1094.00	2221	Spesialsykepleier	Helsesøster
+19-3093.00	2633	Arkeologer, historikere eller kunsthistorikere	Historiker
+29-2061.00	5329	Pleiemedarbeider	Helsefagarbeider
+29-2061.00	5321	Helsefagarbeider	Helsefagarbeider
+29-2061.00	5322	Hjemmehjelper	Helsefagarbeider
+31-1014.00	5329	Pleiemedarbeider	Helsefagarbeider
+31-1014.00	5321	Helsefagarbeider	Helsefagarbeider
+31-1014.00	5322	Hjemmehjelper	Helsefagarbeider
+17-2111.01	3257	Helse- eller miljøkontrollør	HMS-ingeniør
+17-2111.01	3119	Ingeniør	HMS-ingeniør
+17-2111.01	2263	Helse- eller miljørådgiver	HMS-ingeniør
+17-2112.01	3257	Helse- eller miljøkontrollør	HMS-ingeniør
+17-2112.01	3119	Ingeniør	HMS-ingeniør
+17-2112.01	2263	Helse- eller miljørådgiver	HMS-ingeniør
+11-9081.00	1411	Hotellsjef	Hotelldirektør
+11-9081.00	1420	Butikksjef	Hotelldirektør
+29-1069.02	2212	Legespesialist	Hudlege
+19-2043.00	2114	Geolog eller geofysiker	Hydrolog
+29-9091.00	3423	Sports- eller trenginsinstruktør	Idrettstrener
+29-9091.00	3422	Trener eller idrettsdommer	Idrettstrener
+27-1021.00	2163	Produkt- eller klesdesigner	Industridesigner
+47-2141.00	7132	Overflatebehandler eller lakkerer	Industrimaler
+49-9041.00	7233	Anleggsmaskin- eller industrimekaniker	Industrimekaniker
+49-9041.00	8211	Montører av mekaniske produkter	Industrimekaniker
+47-2152.01	7126	Rørlegger eller VVS-montør	Industrirørlegger
+27-1025.00	3432	Interiørdesigner eller dekoratør	Interiørkonsulent
+47-2131.00	7124	Isolatør	Isolatør
+47-2132.00	7124	Isolatør	Isolatør
+29-1161.00	2222	Jordmor	Jordmor
+29-9099.01	2222	Jordmor	Jordmor
+27-3022.00	2642	Journalist	Journalist
+27-3022.00	2656	Programleder i TV eller radio	Journalist
+53-2031.00	5111	Flyvert, båtvert	Kabinbesetning fly
+21-1012.00	2351	Undervisningsinspektør eller -konsulent	Karriereveileder
+21-1012.00	3333	Arbeidsformidler	Karriereveileder
+21-2021.00	2636	Prest	Kateket
+29-1067.00	2212	Legespesialist	Kirurg
+17-2041.00	2113	Kjemiker	Kjemiingeniør
+17-2041.00	3116	Kjemiingeniør	Kjemiingeniør
+19-2031.00	2113	Kjemiker	Kjemiker
+19-2031.00	3116	Kjemiingeniør	Kjemiker
+19-2031.00	8131	Operatør i kjemisk industri	Kjemiker
+51-6052.00	7531	Skredder, buntmaker	Kjole- og draktsyer
+51-6052.00	7318	Vever, strikker (innen husflidsproduksjon)	Kjole- og draktsyer
+27-1022.00	2163	Produkt- eller klesdesigner	Klesdesigner
+53-4031.00	5111	Flyvert, båtvert	Konduktør
+53-4031.00	5112	Konduktør	Konduktør
+25-4013.00	2621	Arkivar eller kurator	Konservator
+27-2032.00	2653	Danser eller koreograf	Koreograf
+53-7021.00	8343	Kran- eller heisfører	Kranfører
+53-7021.00	8113	Boreoperatør	Kranfører
+53-7041.00	8343	Kran- eller heisfører	Kranfører
+53-7041.00	8113	Boreoperatør	Kranfører
+49-9021.01	7127	Kuldemontør	Kulde- og varmepumpemontør
+13-2071.00	2412	Finans- eller investeringsrådgiver	Kunderådgiver i bank
+13-2071.00	3312	Kundebehandler lån eller kreditt	Kunderådgiver i bank
+13-2072.00	2412	Finans- eller investeringsrådgiver	Kunderådgiver i bank
+13-2072.00	3312	Kundebehandler lån eller kreditt	Kunderådgiver i bank
+19-4031.00	3212	Bioingeniør	Laborant
+19-4031.00	3141	Biotekniker (ikke-medisinske laboratorier)	Laborant
+17-1012.00	2164	Arealplanlegger	Landskapsarkitekt
+17-1012.00	2162	Landskapsarkitekt	Landskapsarkitekt
+53-3032.00	8322	Bil-, drosje- eller varebilfører	Yrkessjåfør
+53-3032.00	8331	Bussjåfør eller trikkefører	Yrkessjåfør
+53-3032.00	8332	Lastebil- eller trailersjåfører	Yrkessjåfør
+53-3033.00	8322	Bil-, drosje- eller varebilfører	Yrkessjåfør
+53-3033.00	8331	Bussjåfør eller trikkefører	Yrkessjåfør
+53-3033.00	8332	Lastebil- eller trailersjåfører	Yrkessjåfør
+11-1011.00	1219	Administrativ leder	Leder
+11-1011.00	1211	Økonomisjef	Leder
+11-1011.00	1212	Personalsjef	Leder
+11-1011.00	1213	Planleggingssjef	Leder
+11-1011.00	1223	Forsknings- eller utviklingsleder	Leder
+11-1011.00	1221	Salgs- eller markedssjef	Leder
+11-1011.00	1330	IKT-sjef	Leder
+11-1011.00	1323	Leder av bygge- eller anleggsvirksomhet	Leder
+11-1011.00	1321	Leder i industri	Leder
+11-1011.00	1324	Leder av logistikk eller transport	Leder
+11-1011.00	1322	Leder av olje- eller gassutvinning	Leder
+11-1011.00	1343	Enhetsleder, eldreomsorg	Leder
+11-1011.00	1346	Leder, forsikring eller finans	Leder
+11-1011.00	1342	Leder av helsetjeneste	Leder
+11-1011.00	1341	Barnehagestyrer	Leder
+11-1011.00	1344	Leder av sosialomsorg	Leder
+11-1011.00	1345	Skoleleder	Leder
+11-1011.00	1312	Leder i akvakultur	Leder
+11-1011.00	1439	Daglig leder i tjenesteytende virksomhet	Leder
+11-1011.00	1431	Sports-, rekreasjons- eller kultursenterleder	Leder
+11-1011.00	1411	Hotellsjef	Leder
+11-1011.00	1412	Restaurantsjef	Leder
+11-1011.00	1420	Butikksjef	Leder
+11-1011.00	1120	Daglig leder	Leder
+11-1011.00	1114	Toppleder i interesseorganisasjon	Leder
+11-1011.00	1112	Toppleder i offentlig administrasjon	Leder
+11-1021.00	1219	Administrativ leder	Leder
+11-1021.00	1211	Økonomisjef	Leder
+11-1021.00	1212	Personalsjef	Leder
+11-1021.00	1213	Planleggingssjef	Leder
+11-1021.00	1223	Forsknings- eller utviklingsleder	Leder
+11-1021.00	1221	Salgs- eller markedssjef	Leder
+11-1021.00	1330	IKT-sjef	Leder
+11-1021.00	1323	Leder av bygge- eller anleggsvirksomhet	Leder
+11-1021.00	1321	Leder i industri	Leder
+11-1021.00	1324	Leder av logistikk eller transport	Leder
+11-1021.00	1322	Leder av olje- eller gassutvinning	Leder
+11-1021.00	1343	Enhetsleder, eldreomsorg	Leder
+11-1021.00	1346	Leder, forsikring eller finans	Leder
+11-1021.00	1342	Leder av helsetjeneste	Leder
+11-1021.00	1341	Barnehagestyrer	Leder
+11-1021.00	1344	Leder av sosialomsorg	Leder
+11-1021.00	1345	Skoleleder	Leder
+11-1021.00	1312	Leder i akvakultur	Leder
+11-1021.00	1439	Daglig leder i tjenesteytende virksomhet	Leder
+11-1021.00	1431	Sports-, rekreasjons- eller kultursenterleder	Leder
+11-1021.00	1411	Hotellsjef	Leder
+11-1021.00	1412	Restaurantsjef	Leder
+11-1021.00	1420	Butikksjef	Leder
+11-1021.00	1120	Daglig leder	Leder
+11-1021.00	1114	Toppleder i interesseorganisasjon	Leder
+11-1021.00	1112	Toppleder i offentlig administrasjon	Leder
+29-1069.03	2211	Allmennpraktiserende lege	Lege
+29-1069.03	2212	Legespesialist	Lege
+29-1069.03	1342	Leder av helsetjeneste	Lege
+25-2031.00	2341	Grunnskolelærer	Lektor
+25-2031.00	2330	Lektor (videregående skole)	Lektor
+25-2031.00	2310	Forsker i høyere utdanning	Lektor
+13-1081.00	4321	Lagermedarbeider eller materialforvalter	Logistikkoperatør
+13-1081.00	9333	Laste- eller lossearbeider	Logistikkoperatør
+13-1081.00	1324	Leder av logistikk eller transport	Logistikkoperatør
+13-1081.00	4322	Logistikkmedarbeider	Logistikkoperatør
+13-1081.00	8344	Truckfører	Logistikkoperatør
+13-1081.00	9334	Varepåfyller	Logistikkoperatør
+29-1127.00	2266	Audiograf eller logoped	Logoped
+53-5021.03	3152	Dekksoffiser eller los	Los
+27-4011.00	3521	Tekniker, radio eller tv	Lydtekniker
+27-4014.00	3521	Tekniker, radio eller tv	Lydtekniker
+13-1161.00	2412	Finans- eller investeringsrådgiver	Markedsanalytiker
+13-1161.00	2413	Finansanalytiker	Markedsanalytiker
+11-2011.00	4110	Kontormedarbeider	Markedsføringskonsulent
+11-2011.00	1222	PR- eller informasjonssjef	Markedsføringskonsulent
+11-2011.00	2431	Reklame- eller markedsføringsrådgiver	Markedsføringskonsulent
+11-2011.00	1221	Salgs- eller markedssjef	Markedsføringskonsulent
+11-2021.00	1222	PR- eller informasjonssjef	Markedssjef
+11-2021.00	1221	Salgs- eller markedssjef	Markedssjef
+17-2141.00	2144	Sivilingeniør (maskin- eller marinteknikk)	Maskiningeniør
+17-2141.00	3115	Maskiningeniør	Maskiningeniør
+17-3027.00	2144	Sivilingeniør (maskin- eller marinteknikk)	Maskiningeniør
+17-3027.00	3115	Maskiningeniør	Maskiningeniør
+15-2021.00	2120	Matematiker, statistiker	Matematiker
+53-5011.00	8350	Dekks- eller maskinmannskap (skip)	Matros
+51-4041.00	7412	Automatiker	Mekaniker
+51-4041.00	7233	Anleggsmaskin- eller industrimekaniker	Mekaniker
+51-4041.00	7231	Bilmekaniker	Mekaniker
+51-4041.00	7232	Flymekaniker	Mekaniker
+51-4041.00	7311	Presisjonsinstrumentmaker eller -reparatør	Mekaniker
+51-4041.00	3214	Protese- eller tanntekniker	Mekaniker
+51-4041.00	8142	Operatør, plastprodukt	Mekaniker
+19-2021.00	2112	Meteorolog	Meteorolog
+49-3051.00	8350	Dekks- eller maskinmannskap (skip)	Motormann
+47-2021.00	7112	Murer	Murer
+47-2022.00	7112	Murer	Murer
+27-2042.02	2652	Musiker	Musiker
+25-1121.00	2354	Musikklærer	Musikkpedagog
+51-7011.00	7522	Møbelsnekker	Møbelsnekker
+47-2142.00	7534	Møbeltapetserer	Møbeltapetserer
+51-6093.00	7534	Møbeltapetserer	Møbeltapetserer
+33-3031.00	2133	Miljøvernrådgiver	Naturforvalter
+33-3031.00	2132	Sivilagronom	Naturforvalter
+39-5092.00	5142	Kosmetolog	Negledesigner
+19-4011.02	3257	Helse- eller miljøkontrollør	Næringsmiddeltekniker
+19-4011.02	2132	Sivilagronom	Næringsmiddeltekniker
+29-1041.00	3254	Optiker	Optiker
+29-2081.00	3254	Optiker	Optiker
+29-2091.00	3214	Protese- eller tanntekniker	Ortopediingeniør
+51-9082.00	3214	Protese- eller tanntekniker	Ortopeditekniker
+13-1041.06	2212	Legespesialist	Patolog
+29-1069.07	2212	Legespesialist	Patolog
+11-3111.00	1212	Personalsjef	Personalsjef
+11-3121.00	1212	Personalsjef	Personalsjef
+17-2171.00	3117	Petroleumingeniør	Petroleumsingeniør
+17-2171.00	2146	Sivilingeniør (geofag, petroleumsteknologi, metallurgi)	Petroleumsingeniør
+39-6011.00	9621	Bud	Pikkolo
+53-2011.00	3153	Flyger	Pilot
+53-2012.00	3153	Flyger	Pilot
+47-2211.00	7214	Platearbeider	Platearbeider
+33-3051.01	3355	Politibetjent	Politibetjent
+33-3052.00	3355	Politibetjent	Politibetjent
+33-3021.03	2619	Juridisk rådgiver	Politijurist
+33-3021.03	2611	Jurist eller advokat	Politijurist
+11-1031.00	1111	Politiker	Politiker
+31-1015.00	5329	Pleiemedarbeider	Portør
+43-5021.00	4412	Postbud eller postsorterer	Postbud
+43-5052.00	4412	Postbud eller postsorterer	Postbud
+21-2011.00	2636	Prest	Prest
+51-8091.00	9329	Hjelpearbeider i industri	Prosesstekniker
+51-8091.00	3133	Kontrolloperatør i kjemisk prosessindustri	Prosesstekniker
+51-8091.00	3134	Kontrolloperatør raffineringsanlegg	Prosesstekniker
+51-8091.00	8131	Operatør i kjemisk industri	Prosesstekniker
+51-8091.00	8121	Operatør innen metallurgiske prosessfag	Prosesstekniker
+51-8091.00	8114	Operatør innen produksjon av betong	Prosesstekniker
+29-1066.00	2212	Legespesialist	Psykiater
+29-1141.02	2221	Spesialsykepleier	Spesialsykepleier innen psykisk helse
+19-3031.02	2634	Psykolog	Psykolog
+19-3031.02	2635	Barnevern- eller familievernmedarbeider	Psykolog
+19-3031.03	2634	Psykolog	Psykolog
+19-3031.03	2635	Barnevern- eller familievernmedarbeider	Psykolog
+29-1124.00	3211	Radiograf	Radiograf
+29-2034.00	3211	Radiograf	Radiograf
+29-2099.06	3211	Radiograf	Radiograf
+29-1069.10	2212	Legespesialist	Radiolog
+27-3041.00	2641	Forfatter eller forlagsmedarbeider	Redaktør
+27-3041.00	2642	Journalist	Redaktør
+27-2012.02	2654	Regissør eller produsent (film/tv/teater)	Regissør
+13-2011.01	3313	Regnskapsfører	Regnskapsfører
+13-2011.01	4311	Regnskapsmedarbeider	Regnskapsfører
+13-2011.01	2411	Revisor eller regnskapsrådgiver	Regnskapsfører
+41-3041.00	4221	Reisebyråmedarbeider	Reiselivsmedarbeider
+41-3041.00	5113	Reiseleder eller guide	Reiselivsmedarbeider
+39-7012.00	5113	Reiseleder eller guide	Reiseleder
+37-2011.00	8157	Renseri- eller vaskerimaskinoperatør	Renholdsoperatør
+37-2011.00	9111	Renholder i private hjem	Renholdsoperatør
+37-2011.00	9112	Renholder i bedrift	Renholdsoperatør
+37-2011.00	5151	Renholdsleder i bedrift	Renholdsoperatør
+43-2011.00	4224	Hotellresepsjonist	Resepsjonist
+43-2011.00	4226	Resepsjonist (utenom hotell)	Resepsjonist
+43-2011.00	4223	Sentralbordoperatør	Resepsjonist
+43-4171.00	4224	Hotellresepsjonist	Resepsjonist
+43-4171.00	4226	Resepsjonist (utenom hotell)	Resepsjonist
+43-4171.00	4223	Sentralbordoperatør	Resepsjonist
+11-3031.01	3313	Regnskapsfører	Revisor
+11-3031.01	4311	Regnskapsmedarbeider	Revisor
+11-3031.01	2411	Revisor eller regnskapsrådgiver	Revisor
+13-2011.02	3313	Regnskapsfører	Revisor
+13-2011.02	4311	Regnskapsmedarbeider	Revisor
+13-2011.02	2411	Revisor eller regnskapsrådgiver	Revisor
+47-2151.00	7126	Rørlegger eller VVS-montør	Rørlegger
+47-2152.02	7126	Rørlegger eller VVS-montør	Rørlegger
+43-6011.00	3359	Saksbehandler i offentlig forvaltning	Saksbehandler
+43-6011.00	3321	Forsikringsagenter	Saksbehandler
+43-6011.00	2422	Saksbehandler	Saksbehandler
+43-6011.00	4110	Kontormedarbeider	Saksbehandler
+19-3011.00	2631	Rådgiver/forsker, samfunnsøkonomi	Samfunnsøkonom
+27-2042.01	2652	Musiker	Sanger
+43-9022.00	4312	Forsikrings- eller finansmedarbeider	Sekretær
+43-9022.00	3256	Helsesekretær	Sekretær
+43-9022.00	3332	Konferanse- eller arrangementsplanlegger	Sekretær
+43-9022.00	4110	Kontormedarbeider	Sekretær
+43-9022.00	2421	Organisasjonsrådgiver	Sekretær
+43-9022.00	4416	Personalkontormedarbeider	Sekretær
+43-9022.00	4311	Regnskapsmedarbeider	Sekretær
+43-9022.00	3343	Administrasjonskonsulent	Sekretær
+43-9022.00	4323	Transportfunksjonær	Sekretær
+35-3031.00	5246	Gatekjøkken- eller kafémedarbeider	Servitør
+35-3031.00	5131	Servitør	Servitør
+35-3041.00	5246	Gatekjøkken- eller kafémedarbeider	Servitør
+35-3041.00	5131	Servitør	Servitør
+11-9032.00	1345	Skoleleder	Rektor/skoleleder
+27-2011.00	2655	Skuespiller	Skuespiller
+51-3023.00	7511	Slakter, fiskehandler	Slakter
+39-5091.00	5142	Kosmetolog	Sminkør
+19-3041.00	2632	Rådgiver/forsker, samfunnsvitenskap	Sosiolog
+11-9151.00	2635	Barnevern- eller familievernmedarbeider	Sosionom
+11-9151.00	3353	NAV-veileder eller -konsulent	Sosionom
+11-9151.00	3412	Miljøarbeider i sosiale fagfelt	Sosionom
+21-1022.00	2635	Barnevern- eller familievernmedarbeider	Sosionom
+21-1022.00	3353	NAV-veileder eller -konsulent	Sosionom
+21-1022.00	3412	Miljøarbeider i sosiale fagfelt	Sosionom
+11-3071.01	4321	Lagermedarbeider eller materialforvalter	Speditør
+11-3071.01	1324	Leder av logistikk eller transport	Speditør
+11-3071.01	4322	Logistikkmedarbeider	Speditør
+11-3071.01	3331	Speditør eller befrakter	Speditør
+43-5011.01	4321	Lagermedarbeider eller materialforvalter	Speditør
+43-5011.01	1324	Leder av logistikk eller transport	Speditør
+43-5011.01	4322	Logistikkmedarbeider	Speditør
+43-5011.01	3331	Speditør eller befrakter	Speditør
+25-2052.00	2359	Lærer	Spesialpedagog
+25-2052.00	2352	Spesiallærer / spesialpedagog	Spesialpedagog
+25-2053.00	2359	Lærer	Spesialpedagog
+25-2053.00	2352	Spesiallærer / spesialpedagog	Spesialpedagog
+25-2054.00	2359	Lærer	Spesialpedagog
+25-2054.00	2352	Spesiallærer / spesialpedagog	Spesialpedagog
+19-3094.00	2632	Rådgiver/forsker, samfunnsvitenskap	Statsviter
+53-5021.02	3152	Dekksoffiser eller los	Styrmann
+51-4121.06	7212	Sveiser	Sveiser
+29-1141.00	2223	Sykepleier	Sykepleier
+29-1141.00	2221	Spesialsykepleier	Sykepleier
+29-1171.00	2223	Sykepleier	Sykepleier
+29-1171.00	2221	Spesialsykepleier	Sykepleier
+13-2021.02	3315	Takstmann	Takstmann
+47-2181.00	7121	Taktekker	Taktekker
+31-9091.00	3256	Helsesekretær	Tannhelsesekretær
+29-1021.00	2261	Tannlege	Tannlege
+29-2021.00	3251	Tannpleier	Tannpleier
+53-3041.00	8322	Bil-, drosje- eller varebilfører	Taxisjåfør
+27-3043.04	2641	Forfatter eller forlagsmedarbeider	Tekstforfatter
+27-3043.04	2431	Reklame- eller markedsføringsrådgiver	Tekstforfatter
+49-2021.00	7422	Tele- eller IKT-installatør	Telekommunikasjonsmontør
+27-3091.00	2643	Oversetter, tolk	Tolk
+33-3021.05	3351	Toller	Toller
+27-4031.00	3521	Tekniker, radio eller tv	TV-fotograf
+27-4031.00	3431	Fotograf eller filmfotograf	TV-fotograf
+47-2031.01	7115	Tømrer eller snekker	Tømrer
+49-9064.00	7311	Presisjonsinstrumentmaker eller -reparatør	Urmaker
+11-9141.00	5153	Vaktmester	Vaktmester / byggdrifter
+33-9032.00	5414	Vekter	Vekter
+51-4111.00	7223	Metalldreier	Verktøymaker
+51-4111.00	7222	Verktøymaker, låsesmed	Verktøymaker
+29-1131.00	2250	Veterinær	Veterinær
+11-3031.02	1211	Økonomisjef	Økonomisjef
+11-3031.02	1346	Leder, forsikring eller finans	Økonomisjef
+29-1069.06	2212	Legespesialist	Øyelege
+41-2031.00	2434	Salgskonsulenter for IKT-produkt	Salgsmedarbeider
+41-2031.00	2433	Salgskonsulent, tekniske eller medisinske produkt	Salgsmedarbeider
+41-2031.00	3322	Selger (engros)	Salgsmedarbeider
+41-2031.00	4221	Reisebyråmedarbeider	Salgsmedarbeider
+41-2031.00	1221	Salgs- eller markedssjef	Salgsmedarbeider
+41-2031.00	5249	Selger	Salgsmedarbeider
+41-2031.00	5242	Demonstrasjonsselger	Salgsmedarbeider
+41-2031.00	5244	Telefon- eller nettselger	Salgsmedarbeider
+41-2031.00	5230	Billettselger	Salgsmedarbeider
+41-2031.00	5222	Butikkavdelingssjef	Salgsmedarbeider
+41-2031.00	5223	Butikkmedarbeider	Salgsmedarbeider
+41-2031.00	5211	Torghandler	Salgsmedarbeider
+51-3021.00	7511	Slakter, fiskehandler	Kjøttskjærer
+51-3022.00	7511	Slakter, fiskehandler	Kjøttskjærer
+49-9094.00	7222	Verktøymaker, låsesmed	Låsesmed
+51-4122.00	7211	Støper	Gjørtler
+47-2071.00	8342	Anleggsmaskinfører	Asfaltør
+47-2071.00	9312	Hjelpearbeider i anlegg	Asfaltør
+47-2071.00	8114	Operatør innen produksjon av betong	Asfaltør
+47-4061.00	8342	Anleggsmaskinfører	Banemontør
+47-4061.00	8312	Skiftekonduktør	Banemontør
+47-2051.00	7114	Betongarbeider	Betongfagarbeider
+47-2051.00	8114	Operatør innen produksjon av betong	Betongfagarbeider
+47-2171.00	7114	Betongarbeider	Betongfagarbeider
+47-2171.00	8114	Operatør innen produksjon av betong	Betongfagarbeider
+51-5111.00	8183	Pakke-, tappe- eller etikettmaskinoperatør	Grafisk trykker
+51-5111.00	7322	Trykker	Grafisk trykker
+51-5112.00	8183	Pakke-, tappe- eller etikettmaskinoperatør	Grafisk trykker
+51-5112.00	7322	Trykker	Grafisk trykker
+35-2012.00	5120	Kokk	Institusjonskokk
+49-3052.00	7231	Bilmekaniker	Motorsykkelmekaniker
+49-2094.00	7411	Elektriker	Elektroreparatør
+47-2031.02	7119	Bygningsarbeider	Stillasbygger
+49-3022.00	7213	Kopper- eller blikkenslager	Bilskadereparatør
+47-5031.00	8111	Bergfagarbeider	Fjell- og bergverksarbeider
+47-5031.00	7542	Skytebas eller sprengningsarbeider	Fjell- og bergverksarbeider
+47-5031.00	3121	Arbeidsleder, bergfag	Fjell- og bergverksarbeider
+47-5051.00	8111	Bergfagarbeider	Fjell- og bergverksarbeider
+47-5051.00	7542	Skytebas eller sprengningsarbeider	Fjell- og bergverksarbeider
+47-5051.00	3121	Arbeidsleder, bergfag	Fjell- og bergverksarbeider
+47-5061.00	8111	Bergfagarbeider	Fjell- og bergverksarbeider
+47-5061.00	7542	Skytebas eller sprengningsarbeider	Fjell- og bergverksarbeider
+47-5061.00	3121	Arbeidsleder, bergfag	Fjell- og bergverksarbeider
+49-3042.00	7233	Anleggsmaskin- eller industrimekaniker	Anleggsmaskinmekaniker
+51-9194.00	7313	Gull- eller sølvsmed, gravør	Gravør
+45-4021.00	6210	Skogbruker	Skogsoperatør
+45-4021.00	8341	Jordbruks- eller skogbruksmaskinfører	Skogsoperatør
+45-4021.00	9215	Hjelpearbeider i skogbruk	Skogsoperatør
+45-4022.00	6210	Skogbruker	Skogsoperatør
+45-4022.00	8341	Jordbruks- eller skogbruksmaskinfører	Skogsoperatør
+45-4022.00	9215	Hjelpearbeider i skogbruk	Skogsoperatør
+47-5011.00	3134	Kontrolloperatør raffineringsanlegg	Bore- og vedlikeholdsoperatør
+47-5011.00	8113	Boreoperatør	Bore- og vedlikeholdsoperatør
+47-5012.00	3134	Kontrolloperatør raffineringsanlegg	Bore- og vedlikeholdsoperatør
+47-5012.00	8113	Boreoperatør	Bore- og vedlikeholdsoperatør
+49-3041.00	7233	Anleggsmaskin- eller industrimekaniker	Landbruksmaskinmekaniker
+47-2121.00	7125	Glassarbeider	Glassfagarbeider
+47-2121.00	8181	Operatør (glass- eller keramikk)	Glassfagarbeider
+47-4091.00	7113	Steinhogger	Steinfagarbeider
+47-4091.00	3121	Arbeidsleder, bergfag	Steinfagarbeider
+51-9195.03	7113	Steinhogger	Steinfagarbeider
+51-9195.03	3121	Arbeidsleder, bergfag	Steinfagarbeider
+51-8013.00	5419	Sikkerhetsarbeider	Energioperatør
+51-8013.00	7412	Automatiker	Energioperatør
+51-8013.00	3131	Energikontrolloperatør	Energioperatør
+51-8099.04	5419	Sikkerhetsarbeider	Energioperatør
+51-8099.04	7412	Automatiker	Energioperatør
+51-8099.04	3131	Energikontrolloperatør	Energioperatør
+51-6021.00	8157	Renseri- eller vaskerimaskinoperatør	Tekstilrenser
+51-6061.00	8157	Renseri- eller vaskerimaskinoperatør	Tekstilrenser
+51-6051.00	7318	Vever, strikker (innen husflidsproduksjon)	Håndvever
+47-2061.00	8342	Anleggsmaskinfører	Vei- og anleggsarbeider
+47-2061.00	9312	Hjelpearbeider i anlegg	Vei- og anleggsarbeider
+11-9061.00	5163	Begravelsesbyrå- eller krematoriearbeider	Gravferdskonsulent
+39-4021.00	5163	Begravelsesbyrå- eller krematoriearbeider	Gravferdskonsulent
+39-4031.00	5163	Begravelsesbyrå- eller krematoriearbeider	Gravferdskonsulent
+17-2051.00	3112	Bygningsingeniør	Byggingeniør
+27-2021.00	3421	Idrettsutøver	Idrettsutøver
+27-2023.00	3422	Trener eller idrettsdommer	Sportsdommer
+21-1023.00	5321	Helsefagarbeider	Miljøterapeut
+21-1023.00	3412	Miljøarbeider i sosiale fagfelt	Miljøterapeut
+21-1023.00	2224	Vernepleier	Miljøterapeut
+43-3031.00	2422	Saksbehandler	Økonomikonsulent
+43-3031.00	3313	Regnskapsfører	Økonomikonsulent
+51-7041.00	7223	Metalldreier	CNC-operatør
+51-7041.00	7222	Verktøymaker, låsesmed	CNC-operatør
+29-1023.00	2261	Tannlege	Kjeveortoped
+29-1151.00	2221	Spesialsykepleier	Anestesisykepleier
+29-1069.04	2212	Legespesialist	Nevrolog
+13-2051.00	2412	Finans- eller investeringsrådgiver	Finansanalytiker
+13-2051.00	3311	Finansmegler	Finansanalytiker
+29-1141.03	2221	Spesialsykepleier	Intensivsykepleier
+53-4011.00	8311	Lokomotiv- eller T-banefører	Lokomotivfører
+53-4041.00	8331	Bussjåfør eller trikkefører	Trikkefører 
+11-9033.00	2341	Grunnskolelærer	Undervisningsinspektør
+11-9033.00	2330	Lektor (videregående skole)	Undervisningsinspektør
+17-2111.02	3112	Bygningsingeniør	Branningeniør
+33-2021.01	3112	Bygningsingeniør	Branningeniør
+33-2021.02	3112	Bygningsingeniør	Branningeniør
+29-1051.00	2262	Farmasøyt	Farmasøyt
+29-1051.00	3213	Reseptar	Farmasøyt
+43-4031.02	2422	Saksbehandler	Rådgiver i offentlig sektor
+43-4031.02	3353	NAV-veileder eller -konsulent	Rådgiver i offentlig sektor
+25-4012.00	2621	Arkivar eller kurator	Museumsformidler
+51-2091.00	8142	Operatør, plastprodukt	Komposittbåtbygger
+29-1199.05	3254	Optiker	Ortoptist
+53-5031.00	8350	Dekks- eller maskinmannskap (skip)	Maskinist
+53-5031.00	8182	Fyrkjele- eller turbinoperatør	Maskinist
+53-5031.00	3151	Skipsmaskinist	Maskinist
+27-3031.00	2432	Informasjonsrådgiver	Kommunikasjonsrådgiver
+27-3031.00	1222	PR- eller informasjonssjef	Kommunikasjonsrådgiver
+49-3031.00	7231	Bilmekaniker	Bilmekaniker (tunge kjøretøy)
+51-6063.00	7318	Vever, strikker (innen husflidsproduksjon)	Strikkehåndverker
+51-6063.00	8152	Operatør i tekstilproduksjon	Strikkehåndverker
+27-1026.00	3432	Interiørdesigner eller dekoratør	Utstillingsdesigner
+51-2011.00	7232	Flymekaniker	Flystrukturmekaniker
+17-2112.00	3114	Elektronikkingeniør	Prosessingeniør
+17-2112.00	3117	Petroleumingeniør	Prosessingeniør
+17-2112.00	3116	Kjemiingeniør	Prosessingeniør
+17-2199.04	3114	Elektronikkingeniør	Prosessingeniør
+17-2199.04	3117	Petroleumingeniør	Prosessingeniør
+17-2199.04	3116	Kjemiingeniør	Prosessingeniør
+39-3092.00	3432	Interiørdesigner eller dekoratør	Rekvisitør
+29-1125.02	2354	Musikklærer	Musikkterapeut
+29-1063.00	2212	Legespesialist	Indremedisiner
+29-1062.00	2211	Allmennpraktiserende lege	Allmennlege
+29-1062.00	2212	Legespesialist	Allmennlege
+29-1061.00	2212	Legespesialist	Anestesilege
+31-1011.00	5322	Hjemmehjelper	Hjemmehjelp
+29-1069.12	2212	Legespesialist	Urolog
+19-1041.00	2212	Legespesialist	Samfunnsmedisiner
+29-1069.09	2212	Legespesialist	Samfunnsmedisiner
+29-1069.05	2212	Legespesialist	Nukleærmedisiner
+53-5021.01	3152	Dekksoffiser eller los	Kaptein
+27-2022.00	3423	Sports- eller trenginsinstruktør	Personlig trener
+27-2022.00	1431	Sports-, rekreasjons- eller kultursenterleder	Personlig trener
+39-9031.00	3423	Sports- eller trenginsinstruktør	Personlig trener
+39-9031.00	1431	Sports-, rekreasjons- eller kultursenterleder	Personlig trener
+15-1142.00	2521	Databaseadministrator	IT-administrator
+15-1142.00	2529	IKT-systemansvarlig	IT-administrator
+15-1142.00	2522	Systemadministrator	IT-administrator
+15-1142.00	3511	Driftstekniker, IKT	IT-administrator
+15-1151.00	3512	Brukerstøtte, IKT	Helpdeskmedarbeider
+15-1143.00	3513	Nettverks- eller systemtekniker, IKT	Nettverksadministrator
+15-1143.00	2522	Systemadministrator	Nettverksadministrator
+15-1152.00	3513	Nettverks- eller systemtekniker, IKT	Nettverksadministrator
+15-1152.00	2522	Systemadministrator	Nettverksadministrator
+37-2021.00	7544	Desinfeksjonsarbeider eller skadedyrbekjemper	Skadedyrbekjemper
+33-3021.01	3355	Politibetjent	Etterforsker
+33-3021.01	3411	Privatetterforsker	Etterforsker
+33-3021.02	3355	Politibetjent	Etterforsker
+33-3021.02	3411	Privatetterforsker	Etterforsker
+33-9021.00	3355	Politibetjent	Etterforsker
+33-9021.00	3411	Privatetterforsker	Etterforsker
+19-3031.01	2634	Psykolog	Pedagogisk-psykologisk rådgiver (PP-rådgiver)
+17-3029.06	8121	Operatør innen metallurgiske prosessfag	Produksjonstekniker
+17-3029.06	8131	Operatør i kjemisk industri	Produksjonstekniker
+17-3029.06	8142	Operatør, plastprodukt	Produksjonstekniker
+17-3029.09	8121	Operatør innen metallurgiske prosessfag	Produksjonstekniker
+17-3029.09	8131	Operatør i kjemisk industri	Produksjonstekniker
+17-3029.09	8142	Operatør, plastprodukt	Produksjonstekniker
+19-3051.00	2164	Arealplanlegger	Samfunnsplanlegger
+19-3051.00	2133	Miljøvernrådgiver	Samfunnsplanlegger
+53-7081.00	9612	Gjenvinningsarbeider	Gjenvinningsoperatør
+53-7081.00	9611	Renovasjonsarbeider	Gjenvinningsoperatør
+23-2011.00	3342	Advokatsekretær	Advokatassistent
+17-3029.01	7212	Sveiser	NDT-kontrollør
+39-2021.00	5164	Dyrepasser eller - trener	Dyrepasser
+51-9195.07	7211	Støper	Støper
+53-7061.00	9122	Bilvasker	Bilklargjører
+53-7061.00	5245	Servicemedarbeider (bensinstasjon)	Bilklargjører
+17-2199.03	2151	Sivilingeniør (elkraftteknikk)	Ingeniør i energi og miljø i bygg
+17-2199.03	2143	Sivilingeniør (miljøteknikk)	Ingeniør i energi og miljø i bygg
+11-9051.00	9412	Kjøkkenassistent	Kantinemedarbeider
+11-9051.00	5120	Kokk	Kantinemedarbeider
+35-3022.00	9412	Kjøkkenassistent	Kantinemedarbeider
+35-3022.00	5120	Kokk	Kantinemedarbeider
+19-1032.00	3143	Skogtekniker	Skogbruksleder
+11-3061.00	3323	Innkjøper	Innkjøper
+43-3021.01	3323	Innkjøper	Innkjøper
+43-3061.00	3323	Innkjøper	Innkjøper
+35-3022.01	5131	Servitør	Barista
+15-2041.01	2120	Matematiker, statistiker	Statistiker
